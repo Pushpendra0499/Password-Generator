@@ -8,15 +8,62 @@
 </head>
 <body>
     <div class="container">
-        <h2>Password Generator</h2>
+        <h1>Password Generator</h1>
         <div class="display-container">
-           <input readonly placeholder="Passsword"> 
+           <input readonly placeholder="Passsword" class="display" data-passwordDisplay> 
+           <button data-copy>
+            <span data-copyMsg></span>
+            <img src="./assets/copy.svg" alt="copy" width="23" height="23">
+           </button>
         </div>
 
-    </div>
+        <div class="input-container">
+            <!-- password length-Sction-->
+            <div class="length-coontainer">
+                <p>Password Length</p>
+                <p dta-lengthNumber>0</p>
+            </div>
+            <!-- Slider -->
+            <input type="range" min="1" max="20" step="1" class="slider" id="myRange" data-lengthSlider>
+
+            <!-- Checkboxes -->
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includes uppercase Letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes lowercase Letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Includes numbers</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Includes  Symbols</label>
+            </div>
+
+            <!-- Strength Section  -->
+            <div class="strenght-container">
+                <p>Strength</p>
+                <div data-indicator>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <!--++++++++++++++++++ generate password button+++++++++++ -->
+            <button class="generateButton">Generate Password</button>
+
+        </div>
+
+    </div> 
 
 
-
+<script src="script.js"></script>
 
 </body>
 </html>
