@@ -1,2 +1,2 @@
-# My-JS-mini-Project
+# My-Password-Generator-Project
 JavaScript Project-1
